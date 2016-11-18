@@ -1,0 +1,99 @@
+/* # Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Site Containers
+--------------------------------------------- */
+
+.site-inner,
+.wrap {
+	margin: 0 auto;
+	width:90%;
+	max-width: 1200px;
+}
+
+.site-inner {
+	clear: both;
+	padding-top: 273px;
+}
+
+.featured-image .site-inner {
+	padding-top: 40px;
+}
+
+/* ## Column Widths and Positions
+--------------------------------------------- */
+
+/* ### Wrapping div for .content and .sidebar-primary */
+
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	@include structure(980, 1200);
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap {
+	float: left;
+}
+
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	float: right;
+}
+
+/* ### Content */
+
+.content {
+	float: right;
+	@include structure(800, 1200);
+}
+
+.content-sidebar .content,
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content {
+	float: left;
+}
+
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content,
+.sidebar-sidebar-content .content {
+	@include structure(580, 980);
+}
+
+.full-width-content .content {
+	width: 100%;
+}
+
+/* ### Primary Sidebar */
+
+.sidebar-primary {
+	float: right;
+	@include structure(360, 1200);
+}
+
+
+.content-sidebar-sidebar .sidebar-primary,
+.sidebar-content-sidebar .sidebar-primary {
+	float:right;
+	@include structure(360, 980);
+}
+
+.sidebar-content .sidebar-primary {
+	float: left;
+	@include structure(360, 1200);
+}
+.sidebar-sidebar-content .sidebar-primary {
+	float: left;
+	@include structure(360, 980);
+}
+
+/* ### Secondary Sidebar */
+
+.sidebar-secondary {
+	float: left;
+	@include structure(180, 1200);
+}
+
+.content-sidebar-sidebar .sidebar-secondary {
+	float: right;
+}
+

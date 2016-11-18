@@ -1,0 +1,68 @@
+/* # Event page Layout
+---------------------------------------------------------------------------------------------------- */
+
+.events .event-table {
+  float: right;
+  @include structure(580, 1200); 
+}
+
+.events article.entry {
+	float: left;
+  	@include structure(580, 1200); 
+}
+
+.events .gridcontainer,
+.events .gridcontainer.dark_background {
+    margin-bottom: 0px;
+}
+
+.events .gridcontainer.event_list [class*="coll"] {
+	margin-bottom:70px;
+}
+
+.event_list img{
+	margin-bottom:20px;
+}
+
+.event_text {
+	height:105px;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+.event_btn,
+.booking_btn {
+	display:block;
+	@include font(1.8, 1.6);
+	font-weight: 300;
+	padding: 8px 24px;
+	text-align:center;
+}
+
+.event_btn {
+	float:left;
+	background-color:darken($color-primary-one, 3%);
+}
+
+.booking_btn {
+	float:right;
+}
+
+
+/* Event Page
+----------------------------------------------- */
+
+.event .top {
+	display:block;
+	float:left;
+	width:100%;
+	border-bottom: 1px solid $color-primary-two;
+	margin-bottom:40px;
+}
+
+.event .last {
+	display:block;
+	float:left;
+	width:100%;
+	border-top: 1px solid $color-primary-two;
+}

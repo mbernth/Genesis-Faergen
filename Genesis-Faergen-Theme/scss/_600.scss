@@ -1,0 +1,45 @@
+@media only screen and (max-width: 638px) {
+	/* Instagram feed CSS
+	---------------------------------------------------------------------------------------------------- */
+	
+	#sb_instagram.sbi_col_3 #sbi_images .sbi_item {
+		@include instagrid(2, 20, 540);
+		margin-bottom:20px !important;
+	}
+}
+@media only screen and (max-width: 600px) {
+	
+	/* ## Home events
+	--------------------------------------------- */
+	/* ### event */
+	.event-table table,
+	.event-table table td,
+	.event-table table tr{
+		display:block;
+		float:left;
+		width:100%;
+	}
+	.event-table table td {
+		border:none;
+		padding:inherit;
+	}
+	.event-table table tr {
+		border-bottom: 1px solid $color-primary-two;
+		padding: 8px 0;
+	}
+	.event-table a.button {
+    	width: 100%;
+    	text-align: center;
+	}
+	
+	/* Home page layout
+  	-------------------------------------- */
+	.events .gridcontainer.event_list .coll3 {
+		@include grid(1, 0, 600);
+	}
+	
+	.event_text {
+    	height: 90px;
+	}
+	
+}

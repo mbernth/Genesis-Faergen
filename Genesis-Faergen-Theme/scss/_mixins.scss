@@ -1,0 +1,123 @@
+/*
+MIXINS
+---------------------------------------------------------------------------------------------------- */
+
+/* Colours
+--------------------------------------------- */
+
+/* White */
+$color-white: #f9f6ef;
+$color-black_rgb: rgb(249, 246, 239) ; /* White */
+
+/* Black */
+$color-black: #2d2a23; /* Black */
+$color-black_rgb: rgb(45, 42, 35); /* Black */
+
+/* Background */
+$color-background: #f3eddf;
+$color-background_rgb: rgb(243, 237, 223);
+
+/* Primary One (Green) */
+$color-primary-one: #052e19; /* 100% Green */
+$color-primary-one_rgb: rgb(5, 46, 25) ; /* Green */
+
+/* Primary Two (Brown) */
+$color-primary-two: #e0d3b0; /* 100% Brown */
+$color-primary-two_rgb: rgb(224, 211, 176) ; /* Brown */
+
+/* Secondary One (Signal Green) */
+$color-secondary-one: #79ad36; /* 100% Signal Green */
+$color-secondary-one_rgb: rgb(121, 173, 54) ; /* Signal Green */
+
+/* Primary One (Red) */
+$color-secondary-two: #d71a44; /* 100% Red */
+$color-secondary-two_rgb: rgb(215, 26, 68) ; /* Red */
+
+/* Typography
+--------------------------------------------- */
+
+/* Primary Font Faminly */
+/* $font-bread: Georgia, "Times New Roman", Times, "ff-celeste-web", serif;
+$font-headlines: Georgia, "Times New Roman", Times, "ff-celeste-web", serif; */
+$font-bread: Georgia, "Times New Roman", Times, serif;
+$font-headlines: Georgia, "Times New Roman", Times,s erif;
+
+/* Basic Font Sizes mixin */
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin line-height($lineheight: 1.6) {
+  line-height:($lineheight * 10) + px;
+  line-height:$lineheight + rem;
+}
+
+@mixin font($fontsize: 1.6, $lineheight: 1.6) {
+  font-size: ($fontsize * 10) + px;
+  font-size: $fontsize + rem;
+  line-height:($lineheight * 10) + px;
+  line-height:$lineheight + rem;
+}
+
+p.standard {
+	@include font(1.8, 2.6);
+}
+
+/* Border Radius
+--------------------------------------------- */
+
+@mixin corners($radius){
+	-webkit-border-radius: $radius + px;
+	   -moz-border-radius: $radius + px;
+			border-radius: $radius + px;
+}
+
+/* Gradients
+--------------------------------------------- */
+
+@mixin linear-gradient($from, $to) {
+	/* Fallback for sad browsers */
+	background-color: $to;
+	/* Mozilla Firefox */
+	background-image:-moz-linear-gradient($from, $to);
+	/* Opera */
+	background-image:-o-linear-gradient($from, $to);
+	/* WebKit (Safari 4+, Chrome 1+) */
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to));
+	/* WebKit (Chrome 11+) */
+	background-image: -webkit-linear-gradient($from, $to);
+	/* IE10 */
+	background-image: -ms-linear-gradient($from, $to);
+	/* W3C */
+	background-image: linear-gradient($from, $to);
+}
+
+/* Grid
+--------------------------------------------- */
+
+/* Grid mixin */
+@mixin grid($colls, $margin, $target) {
+  width: ((($target - (($colls - 1) * $margin)) / $colls) / $target) * 100%;
+  &:nth-child(n) {
+    margin-right: (($margin / $target) * 100%);
+  }
+  &:nth-child(#{$colls}n) {
+    margin-right: 0;
+  }
+}
+
+@mixin instagrid($colls, $margin, $target) {
+  width: ((($target - (($colls - 1) * $margin)) / $colls) / $target) * 100%;
+  &:nth-child(n) {
+    margin-right: (($margin / $target) * 100%) !important;
+  }
+  &:nth-child(#{$colls}n) {
+    margin-right: 0 !important;
+  }
+}
+
+
+@mixin structure($width, $target) {
+	width: ($width / $target * 100%);
+}

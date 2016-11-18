@@ -1,0 +1,131 @@
+/* # Home page Layout
+---------------------------------------------------------------------------------------------------- */
+/* ## Home Containers
+--------------------------------------------- */
+.home .site-inner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%; }
+  
+.home .entry{
+	margin-bottom:0px}
+
+/* ## Home header
+--------------------------------------------- */
+.home-image .wrap {
+  text-align: center;
+  margin-top: 195px;
+  padding: 60px 0;
+  color: $color-background;
+  max-width: 960px; }
+
+.home-image .wrap h1 {
+  @include font(5.6, 5.6);
+  color: $color-background;
+  text-shadow: 3px 3px 6px rgba(45, 42, 35, 0.75);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px; }
+
+.home-image .wrap p {
+  @include font(2.4, 2.6);
+  color: $color-background;
+  text-shadow: 3px 3px 6px rgba(45, 42, 35, 0.75);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 30px; }
+
+.home-image .wrap a.button {
+  padding: 20px 45px;
+  @include font(2.4, 2.4);
+ }
+
+.home.full-width-content .content .entry-content {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  padding:30px 0 70px;
+ }
+
+/* ## Home events
+--------------------------------------------- */
+/* ### event */
+.event-table {
+  float: left;
+  @include structure(800, 1200); 
+}
+
+.event-table time {
+  font-weight: 800; 
+}
+
+.event-table a {
+  text-decoration: none; 
+  @include font(2, 1.8);
+ }
+ 
+ .event-table a:hover,
+ .event-table a:focus {
+	 text-decoration:underline;
+ }
+
+.event-table a.button {
+  padding: 10px 25px;
+  float: right;
+  @include font(1.8, 1.8);
+}
+.event-table a.button:hover,
+.event-table a.button:focus {
+	text-decoration:none;
+}
+
+.event-table .button.sold_out {
+  padding: 10px 25px;
+  float: right;
+  @include font(1.8, 1.8);
+  background-color:$color-secondary-two;
+  cursor: inherit;
+  min-width:125px;
+  text-align:center;
+}
+
+/* ### featured event */
+.event-featured {
+  float: right;
+  @include structure(360, 1200); 
+ }
+
+.event-featured p {
+  margin-top: 5px;
+  font-style: italic;
+  @include font(1.4, 1.6);
+}
+.event-featured p:last-child{
+	margin-bottom:0px;
+}
+
+/* ## Home gridset
+--------------------------------------------- */
+.home .gridcontainer{
+	margin-bottom:0;
+}
+.home .gridcontainer .wrap {
+	padding:70px 0;
+}
+.dark_background {
+  background-color: $color-primary-one;
+  color: $color-primary-two;
+  padding: 70px 0; }
+.gridcontainer.dark_background .wrap {
+	padding:0;
+}
+.dark_background h1,
+.dark_background h2,
+.dark_background h3,
+.dark_background h4,
+.dark_background h5,
+.dark_background h6,
+.dark_background p,
+.dark_background a {
+  color: $color-primary-two; }

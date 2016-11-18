@@ -1,0 +1,82 @@
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+	position:absolute;
+	width:100%;
+	background-color: $color-primary-one;
+}
+.featured-image .site-header {
+	background-color: transparent;
+}
+.site-header .wrap {
+	width:100%;
+	max-width:90%;
+}
+
+/* ## Title Area
+--------------------------------------------- */
+
+.title-area {
+	padding: 40px 0 20px;
+	width: 100%;
+}
+
+.header-full-width .title-area {
+	width: 100%;
+}
+
+.site-title {
+	@include font(3.2, 3.2);
+	font-weight: 400;
+	line-height: 1.2;
+	text-align:center;
+}
+
+.site-title a,
+.site-title a:hover,
+.site-title a:focus {
+	color: $color-black;
+}
+
+.header-image .site-title > a {
+	background: url(images/logo.png) no-repeat left;
+	float: left;
+	min-height: 60px;
+	width: 100%;
+}
+
+.site-title a, .site-title a:hover {
+    background: url(images/logo.svg) no-repeat center top;
+    display: block;
+    width: 240px;
+    height: 92px;
+    margin: 0 auto;
+    text-indent: -999em;
+    text-decoration: none;
+}
+
+.site-description {
+	@include font(0, 0);
+	text-indent: -999em;
+    text-decoration: none;
+}
+
+.site-description,
+.site-title {
+	margin-bottom: 0;
+}
+
+.header-image .site-description,
+.header-image .site-title {
+	display: block;
+	text-indent: -9999px;
+}
+
+/* ## Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+	text-align: center;
+	width:100%;
+}

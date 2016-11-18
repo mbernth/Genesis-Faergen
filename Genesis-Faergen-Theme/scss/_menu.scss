@@ -1,0 +1,41 @@
+/* Menu
+---------------------------------------------------------------------------------------------------- */
+.menu .entry-header .entry-title{
+	text-align:center;
+}
+.menu .entry-content .gridcontainer {
+	padding-bottom:40px;
+	margin-bottom:40px;
+	border-bottom:1px solid $color-primary-two;
+}
+
+.menu .entry-content .gridcontainer:last-child {
+	padding-bottom:0px;
+	margin-bottom:70px;
+	border-bottom:none;
+}
+.menu .entry-content .gridcontainer .coll1 {
+	text-align:center;
+}
+
+.menu .entry-content .gridcontainer.recomended {
+	background-color:$color-primary-two;
+	padding-bottom:0px;
+	border-bottom:none;
+}
+
+.menu .entry-content .gridcontainer.recomended .coll1 {
+	padding:40px;
+}
+
+.booking {
+	clear:both;
+	display:block;
+	margin:40px auto;
+	width:50%;
+	min-width:100px;
+	max-width:90%;
+	text-align:center;
+	padding: 20px 32px;
+	@include font(2, 2);
+}

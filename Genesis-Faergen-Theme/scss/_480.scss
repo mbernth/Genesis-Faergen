@@ -1,0 +1,17 @@
+@media only screen and (max-width: 480px) {
+	
+	/* ## Home header
+	--------------------------------------------- */
+	.home-image .wrap h1 {
+  		@include font(2.8, 2.8);
+  		margin-bottom: 10px; 
+	}
+	
+	/* Instagram feed CSS
+	---------------------------------------------------------------------------------------------------- */
+	
+	#sb_instagram.sbi_col_3 #sbi_images .sbi_item {
+		@include instagrid(1, 0, 480);
+		margin-bottom:20px !important;
+	}
+}

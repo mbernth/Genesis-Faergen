@@ -1,0 +1,108 @@
+/* Grid
+---------------------------------------------------------------------------------------------------- */
+
+/* Grid Container
+--------------------------------------------- */
+.gridcontainer {
+	display:block;
+	float:left;
+	width:100%;
+	margin-bottom:40px;
+}
+
+.site-inner .gridcontainer:last-child {
+	margin-bottom:0;
+}
+
+.site-inner .gridcontainer [class*="coll"] p:last-child {
+	margin-bottom:0;
+}
+
+/* Columns
+--------------------------------------------- */
+
+.coll1,
+.coll2,
+.coll3,
+.coll4,
+.coll5,
+.coll6,
+.coll7,
+.coll8,
+.coll9,
+.coll10,
+.coll11,
+.coll12,{
+	float:left;
+}
+.coll1 {
+	width:100%;
+}
+.coll2 {
+	@include grid(2, 40, 1200);
+}
+.coll3 {
+	@include grid(3, 40, 1200);
+}
+.coll4 {
+	@include grid(4, 40, 1200);
+}
+.coll5 {
+	@include grid(5, 40, 1200);
+}
+.coll6 {
+	@include grid(6, 40, 1200);
+}
+.coll7 {
+	@include grid(7, 40, 1200);
+}
+.coll8 {
+	@include grid(8, 40, 1200);
+}
+.coll9 {
+	@include grid(9, 40, 1200);
+}
+.coll10 {
+	@include grid(10, 40, 1200);
+}
+.coll11 {
+	@include grid(11, 40, 1200);
+}
+.coll12 {
+	@include grid(12, 40, 1200);
+}
+
+/* Default Content Grid
+--------------------------------------------- */
+.coll_content {
+	float: left;
+	@include structure(800, 1200);
+}
+.coll_sidebar {
+	float: right;
+	@include structure(360, 1200);
+}
+.sidebar_content .coll_content {
+	float: right;
+}
+.sidebar_content .coll_sidebar {
+	float: left;
+}
+
+.gridcontainer.booking_area {
+	padding-bottom:40px;
+	margin-bottom:40px;
+	border-top:1px solid $color-primary-two;
+}
+
+/* ### With Sidebar */
+.content-sidebar .coll2{
+	@include grid(2, 40, 800);
+}
+.content-sidebar .coll3{
+	@include grid(3, 40, 800);
+}
+.content-sidebar .coll_content,
+.content-sidebar .coll_sidebar {
+	@include structure(380, 800);
+}

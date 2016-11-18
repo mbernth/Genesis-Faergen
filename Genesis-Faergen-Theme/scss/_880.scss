@@ -1,0 +1,114 @@
+@media only screen and (max-width: 880px) {
+
+	body {
+		background-color: $color-white;
+		@include font(1.6, 2.4);
+	}
+
+	.site-inner,
+	.wrap {
+		max-width: 768px;
+	}
+	
+	.featured-image .site-header {
+	    position: absolute;
+		background-color:$color-primary-one;
+	}
+	.archive-description,
+	.author-box,
+	.comment-respond,
+	.entry,
+	.entry-comments,
+	.entry-pings,
+	.sidebar .widget,
+	.site-header {
+		padding: 0;
+	}
+
+	.archive-pagination li a {
+		margin-bottom: 4px;
+	}
+
+	.five-sixths,
+	.four-sixths,
+	.one-fourth,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.three-fourths,
+	.three-sixths,
+	.two-fourths,
+	.two-sixths,
+	.two-thirds {
+		margin: 0;
+		width: 100%;
+	}
+
+	.sidebar .widget.enews-widget {
+		padding: 40px;
+	}
+	
+	/* Structure layout
+  	-------------------------------------- */
+  
+	
+	/* Grid
+	-------------------------------------- */
+	
+	.coll2 {
+		@include grid(2, 20, 800);
+	}
+	.coll3 {
+		@include grid(1, 20, 800);
+	}
+	.coll4 {
+		@include grid(1, 20, 800);
+	}
+	.coll5 {
+		@include grid(1, 20, 800);
+	}
+	.coll6 {
+		@include grid(2, 20, 800);
+	}
+	.coll7 {
+		@include grid(2, 20, 800);
+	}
+	.coll8 {
+		@include grid(2, 20, 800);
+	}
+	.coll9 {
+		@include grid(2, 20, 800);
+	}
+	.coll10 {
+		@include grid(2, 20, 800);
+	}
+	.coll11 {
+		@include grid(3, 20, 800);
+	}
+	.coll12 {
+		@include grid(4, 20, 800);
+	}
+	
+	/* ## Home header
+	--------------------------------------------- */
+	
+	.home-image .wrap {
+    	margin-top: 105px;
+    	padding: 40px 0;
+	}
+	
+	.home-image .wrap h1 {
+  		@include font(4.2, 4.2);
+  		letter-spacing: 0.1rem;
+  		margin-bottom: 10px; }
+
+	.home-image .wrap p {
+ 		@include font(1.8, 2.2);
+  		letter-spacing: 0.1rem;
+  		margin-bottom: 20px; }
+
+	.home-image .wrap a.button {
+  		padding: 10px 25px;
+  		@include font(1.8, 2.2);
+ 	}
+}

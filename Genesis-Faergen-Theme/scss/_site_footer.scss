@@ -1,0 +1,14 @@
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+	background-color: darken($color-primary-one, 3%);
+	color: $color-primary-two;
+	@include font(1.0, 1.4);
+	padding: 10px 0;
+	text-align: center;
+}
+
+.site-footer p {
+	margin-bottom: 0;
+}

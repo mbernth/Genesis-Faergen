@@ -1,0 +1,116 @@
+@media only screen and (max-width: 767px) {
+	
+	/* Grid
+	-------------------------------------- */
+	
+	.coll2,
+	.coll3,
+	.coll4,
+	.coll5{
+		@include grid(1, 20, 800);
+	}
+	.coll6 {
+		@include grid(2, 20, 800);
+	}
+	.coll7 {
+		@include grid(2, 20, 800);
+	}
+	.coll8 {
+		@include grid(2, 20, 800);
+	}
+	.coll9 {
+		@include grid(2, 20, 800);
+	}
+	.coll10 {
+		@include grid(2, 20, 800);
+	}
+	.coll11 {
+		@include grid(2, 20, 800);
+	}
+	.coll12 {
+		@include grid(2, 20, 800);
+	}
+	
+	/* Default Content Grid
+	--------------------------------------------- */
+	.coll_content,
+	.coll_sidebar {
+		width:100%;
+	}
+	.coll_content{
+		margin-bottom:40px;
+	}
+
+	/* ### With Sidebar */
+	.content-sidebar .coll2{
+		@include grid(1, 20, 800);
+	}
+	.content-sidebar .coll3{
+		@include grid(1, 20, 800);
+	}
+	.content-sidebar .coll_content,
+	.content-sidebar .coll_sidebar {
+		width:100%;
+	}
+	
+	/* ## Home header
+	--------------------------------------------- */
+	
+	.home-image .wrap {
+    	margin-top: 105px;
+    	padding: 40px 0;
+	}
+	
+	.home-image .wrap h1 {
+  		@include font(3.2, 3.2);
+  		letter-spacing: 0.1rem;
+  		margin-bottom: 10px; }
+
+	.home-image .wrap p {
+ 		@include font(1.6, 2);
+  		letter-spacing: 0.1rem;
+  		margin-bottom: 20px; }
+
+	.home-image .wrap a.button {
+  		padding: 10px 25px;
+  		@include font(1.6, 2);
+ 	}
+	
+	/* ## Home events
+	--------------------------------------------- */
+	/* ### event */
+	.event-table {
+  		float: left;
+  		@include structure(600, 600); 
+	}
+
+	/* ### featured event */
+	.event-featured {
+  		float: left;
+  		@include structure(600, 600); 
+ 	}
+	.event-featured img {
+		float:left;
+		width:48%;
+	}
+	.event-featured p {
+		float:right;
+		width:48%;
+  		margin-top: 0px;
+  		font-style: italic;
+  		@include font(1.6, 1.8);
+	}
+	
+	/* ## Home gridset
+	--------------------------------------------- */
+	.dark_background .coll2 {
+		padding-bottom:30px;
+		margin-bottom:30px;
+		border-bottom:1px solid $color-primary-two;
+	}
+	.dark_background .coll2:last-child {
+		padding-bottom:0px;
+		margin-bottom:0px;
+		border-bottom: none;
+	}
+}

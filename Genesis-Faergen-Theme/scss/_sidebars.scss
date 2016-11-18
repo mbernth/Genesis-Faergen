@@ -1,0 +1,65 @@
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+	@include font(1.6, 2.4);
+	margin-bottom:70px;
+}
+
+.sidebar li {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.sidebar p:last-child,
+.sidebar ul > li:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar .widget {
+	margin-bottom: 40px;
+}
+
+/* ### event */
+
+.sidebar .event-table {
+	width:100%;
+}
+.sidebar .event-table table{
+	margin-bottom:20px;
+}
+.sidebar .event-table tbody {
+    border-top: 1px solid $color-primary-one;
+}
+.sidebar .event-table td {
+	vertical-align:top;
+    border-bottom: 1px solid $color-primary-one;
+    padding: 8px 0;
+}
+
+.sidebar .event-table time {
+  font-weight: 800; 
+  @include font(1.6, 2.4);
+}
+
+.sidebar .event-table a{
+	text-decoration:none;
+	@include font(1.6, 2.4);
+}
+.sidebar .event-table a:hover,
+.sidebar .event-table a:focus {
+	 text-decoration:underline;
+ }
+
+/* ### Instagram */
+.sidebar #sb_instagram {
+	padding-bottom:0px !important;
+}
+.sidebar #sb_instagram.sbi_col_3 #sbi_images .sbi_item {
+    margin-bottom: 10px !important;
+}
+
+.sidebar .button {
+	width:100%;
+	text-align:center;
+}
