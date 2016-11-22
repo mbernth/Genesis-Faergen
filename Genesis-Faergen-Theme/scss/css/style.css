@@ -1459,7 +1459,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   background: url(images/logo.svg) no-repeat center top;
   display: block;
   width: 240px;
-  height: 92px;
+  height: 131px;
   margin: 0 auto;
   text-indent: -999em;
   text-decoration: none; }
@@ -1513,7 +1513,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   text-align: left; }
 
 .genesis-nav-menu a {
-  color: #e0d3b0;
+  color: #f8f5eb;
   text-decoration: none;
   display: block;
   padding: 30px 15px 25px;
@@ -1524,7 +1524,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 .genesis-nav-menu a:focus,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .current_page_parent a {
-  color: #e0d3b0;
+  color: #f8f5eb;
   text-decoration: none;
   border-bottom: 5px solid #f8f5eb; }
 
@@ -1542,11 +1542,11 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 
 .genesis-nav-menu .current_page_parent a:hover,
 .genesis-nav-menu .menu-item-has-children a:hover {
-  border-bottom: 5px solid #375847; }
+  border-bottom: 5px solid #001100; }
 
 .genesis-nav-menu .sub-menu a {
-  background-color: #375847;
-  border-bottom: 1px solid #cdd5d1;
+  background-color: #001100;
+  border-bottom: 1px solid #f8f5eb;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 18px;
@@ -1565,7 +1565,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 
 .genesis-nav-menu .sub-menu a:hover {
   color: #f8f5eb;
-  background-color: #698275; }
+  background-color: #001100; }
 
 .genesis-nav-menu .sub-menu .sub-menu {
   margin: -55px 0 0 199px; }
@@ -1612,7 +1612,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 /* ## Site Header Navigation
 --------------------------------------------- */
 .site-header nav {
-  border-top: 1px solid #e0d3b0; }
+  border-top: 1px solid #f8f5eb; }
 
 .site-header .sub-menu .sub-menu {
   margin-top: -56px; }
@@ -1636,12 +1636,12 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   text-decoration: underline; }
 
 .nav-primary .genesis-nav-menu .sub-menu a {
-  color: #001100; }
+  color: #f8f5eb; }
 
 .nav-primary .genesis-nav-menu .sub-menu a:hover,
 .nav-primary .genesis-nav-menu .sub-menu a:focus,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a {
-  color: #001100;
+  color: #f8f5eb;
   text-decoration: underline; }
 
 /* ## Secondary Navigation
@@ -1661,7 +1661,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   text-align: right; }
 
 .nav-secondary .genesis-nav-menu a {
-  color: #e0d3b0;
+  color: #f8f5eb;
   padding: 10px 15px;
   font-size: 12px;
   font-size: 1.2rem;
@@ -1743,7 +1743,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 --------------------------------------------- */
 .home-image .wrap {
   text-align: center;
-  margin-top: 195px;
+  margin-top: 265px;
   padding: 60px 0;
   color: #f8f5eb;
   max-width: 960px; }
@@ -1974,26 +1974,13 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 /* ## Featured image
 --------------------------------------------- */
 .gradient {
-  /*
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.9) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.2)), color-stop(30%,rgba(0,0,0,0.5)), color-stop(80%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0.9)));
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
-    background: -o-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
-    background: -ms-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
-	
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.75) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#e6000000',GradientType=0 );
-	*/
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#052e19+0,7db9e8+100&amp;1+0,0+100 */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1MmUxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #052e19 0%, rgba(5, 46, 25, 0) 100%);
+  background: -moz-linear-gradient(top, #001100 0%, rgba(0, 17, 0, 0) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #052e19 0%, rgba(5, 46, 25, 0) 100%);
+  background: -webkit-linear-gradient(top, #001100 0%, rgba(0, 17, 0, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #052e19 0%, rgba(5, 46, 25, 0.7) 60%, rgba(5, 46, 25, 0) 100%);
+  background: linear-gradient(to bottom, #001100 0%, rgba(0, 17, 0, 0.7) 60%, rgba(0, 17, 0, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#052e19', endColorstr='#00052e19',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001100', endColorstr='#0001100',GradientType=0 );
   /* IE6-8 */
   display: table;
   overflow: hidden;
