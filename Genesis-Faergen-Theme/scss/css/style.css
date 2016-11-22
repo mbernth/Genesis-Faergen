@@ -286,7 +286,7 @@ body > div {
 
 body {
   background-color: #f8f5eb;
-  color: #001100;
+  color: #00000e;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   font-size: 1.8rem;
@@ -316,7 +316,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #001100;
+  color: #00000e;
   text-decoration: none; }
 
 p {
@@ -334,7 +334,7 @@ li {
 hr {
   border: 0;
   border-collapse: collapse;
-  border-top: 1px solid #001100;
+  border-top: 1px solid #00000e;
   clear: both;
   margin: 1em 0; }
 
@@ -370,7 +370,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #001100;
+  color: #00000e;
   font-family: Georgia, "Times New Roman", Times, s erif;
   font-weight: 400;
   margin: 0 0 10px; }
@@ -463,7 +463,7 @@ img {
   width: 11.1111%; }
 
 .gallery img {
-  border: 1px solid #001100;
+  border: 1px solid #00000e;
   height: auto;
   padding: 4px; }
 
@@ -478,7 +478,7 @@ select,
 textarea {
   background-color: #f8f5eb;
   border: 1px solid #5a5446;
-  color: #001100;
+  color: #00000e;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 24px;
@@ -498,12 +498,12 @@ input[type="radio"] {
   width: auto; }
 
 ::-moz-placeholder {
-  color: #001100;
+  color: #00000e;
   font-weight: 300;
   opacity: 1; }
 
 ::-webkit-input-placeholder {
-  color: #001100;
+  color: #00000e;
   font-weight: 300; }
 
 label {
@@ -642,7 +642,7 @@ th {
   font-size: 1em;
   font-weight: bold;
   padding: 15px 23px 14px;
-  color: #001100;
+  color: #00000e;
   background: #f8f5eb;
   z-index: 100000;
   /* Above WP toolbar. */
@@ -1024,7 +1024,7 @@ th {
 
 .entry-title a,
 .sidebar .widget-title a {
-  color: #001100; }
+  color: #00000e; }
 
 .entry-title a:hover,
 .entry-title a:focus {
@@ -1143,7 +1143,7 @@ img.alignright,
   padding: 0 0 24px; }
 
 .footer-widgets .entry {
-  border-bottom: 1px dotted #001100; }
+  border-bottom: 1px dotted #00000e; }
 
 .featured-content .entry-title {
   font-size: 20px;
@@ -1163,11 +1163,11 @@ img.alignright,
   color: #f8f5eb; }
 
 .sidebar .widget.enews-widget {
-  background-color: #001100; }
+  background-color: #00000e; }
 
 .enews-widget input,
 .enews-widget input:focus {
-  border: 1px solid #001100; }
+  border: 1px solid #00000e; }
 
 .enews-widget input {
   font-size: 16px;
@@ -1185,7 +1185,7 @@ img.alignright,
 .enews-widget input:hover[type="submit"],
 .enews-widget input:focus[type="submit"] {
   background-color: #f8f5eb;
-  color: #001100; }
+  color: #00000e; }
 
 .enews form + p {
   margin-top: 24px; }
@@ -1207,7 +1207,7 @@ img.alignright,
 
 /* Display outline on focus */
 :focus {
-  color: #001100;
+  color: #00000e;
   outline: #ccc solid 1px; }
 
 /* PortBox CSS
@@ -1447,7 +1447,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 .site-title a,
 .site-title a:hover,
 .site-title a:focus {
-  color: #001100; }
+  color: #00000e; }
 
 .header-image .site-title > a {
   background: url(images/logo.png) no-repeat left;
@@ -1542,10 +1542,10 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 
 .genesis-nav-menu .current_page_parent a:hover,
 .genesis-nav-menu .menu-item-has-children a:hover {
-  border-bottom: 5px solid #001100; }
+  border-bottom: 5px solid #00000e; }
 
 .genesis-nav-menu .sub-menu a {
-  background-color: #001100;
+  background-color: #00000e;
   border-bottom: 1px solid #f8f5eb;
   font-size: 14px;
   font-size: 1.4rem;
@@ -1565,7 +1565,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 
 .genesis-nav-menu .sub-menu a:hover {
   color: #f8f5eb;
-  background-color: #001100; }
+  background-color: #00000e; }
 
 .genesis-nav-menu .sub-menu .sub-menu {
   margin: -55px 0 0 199px; }
@@ -1623,7 +1623,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 /* ## Primary Navigation
 --------------------------------------------- */
 .nav-primary {
-  background-color: #001100; }
+  background-color: #00000e; }
 
 .nav-primary .genesis-nav-menu a {
   color: #f8f5eb;
@@ -1974,13 +1974,13 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 /* ## Featured image
 --------------------------------------------- */
 .gradient {
-  background: -moz-linear-gradient(top, #001100 0%, rgba(0, 17, 0, 0) 100%);
+  background: -moz-linear-gradient(top, #00000e 0%, rgba(0, 0, 14, 0) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #001100 0%, rgba(0, 17, 0, 0) 100%);
+  background: -webkit-linear-gradient(top, #00000e 0%, rgba(0, 0, 14, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #001100 0%, rgba(0, 17, 0, 0.7) 60%, rgba(0, 17, 0, 0) 100%);
+  background: linear-gradient(to bottom, #00000e 0%, rgba(0, 0, 14, 0.7) 60%, rgba(0, 0, 14, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001100', endColorstr='#0001100',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000e', endColorstr='#000000e',GradientType=0 );
   /* IE6-8 */
   display: table;
   overflow: hidden;
@@ -2018,7 +2018,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   margin-bottom: 0; }
 
 .entry-content code {
-  background-color: #001100;
+  background-color: #00000e;
   color: #f8f5eb; }
 
 /* ## Entry Meta
@@ -2058,7 +2058,7 @@ p.entry-meta {
   display: inline; }
 
 .archive-pagination li a {
-  background-color: #001100;
+  background-color: #00000e;
   color: #f8f5eb;
   cursor: pointer;
   display: inline-block;
@@ -2222,7 +2222,7 @@ li.comment {
   text-decoration: none; }
 
 .footer-widgets input {
-  border: 1px solid #001100; }
+  border: 1px solid #00000e; }
 
 /*
 .footer-widgets a.button,
@@ -2233,7 +2233,7 @@ li.comment {
 }
 */
 .footer-widgets li {
-  border-bottom: 1px dotted #001100;
+  border-bottom: 1px dotted #00000e;
   margin-bottom: 10px;
   padding-bottom: 10px; }
 
