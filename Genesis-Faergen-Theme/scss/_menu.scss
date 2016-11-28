@@ -6,7 +6,7 @@
 .menu .entry-content .gridcontainer {
 	padding-bottom:40px;
 	margin-bottom:40px;
-	border-bottom:1px solid $color-primary-two;
+	border-bottom:1px solid $color-primary-one;
 }
 
 .menu .entry-content .gridcontainer:last-child {
@@ -19,7 +19,7 @@
 }
 
 .menu .entry-content .gridcontainer.recomended {
-	background-color:$color-primary-two;
+	background-color:shade($color-white, 10%);
 	padding-bottom:0px;
 	border-bottom:none;
 }

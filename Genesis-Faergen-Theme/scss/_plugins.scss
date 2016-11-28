@@ -193,7 +193,7 @@
 	display:block;
 	float:left;
 	width:100%;
-	background-color:$color-primary-two;
+	background-color:shade($color-white, 10%);
 	padding:20px;
 }
 

@@ -297,8 +297,8 @@ input:focus[type="submit"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-	background-color: $color-primary-two;
-	color: #5a5446;
+	background-color: $color-white;
+	color: $color-black;
 	text-decoration:none;
 	width:100%;
 	margin:20px 0;
@@ -315,8 +315,8 @@ input:focus[type="submit"],
 .footer-widgets input:focus[type="reset"],
 .footer-widgets input:focus[type="submit"],
 .footer-widgets .button:focus {
-	background-color: #5a5446;
-	color: $color-primary-two;
+	background-color: shade($color-white, 20%);
+	color: $color-black;
 	text-decoration:none;
 }
 
@@ -341,7 +341,7 @@ table {
 }
 
 tbody {
-	border-top: 1px solid $color-primary-two;
+	border-top: 1px solid $color-primary-one;
 }
 
 td,
@@ -350,7 +350,7 @@ th {
 }
 
 td {
-	border-bottom: 1px solid $color-primary-two;
+	border-bottom: 1px solid $color-primary-one;
 	padding: 8px 0;
 }
 

@@ -227,9 +227,9 @@ MIXINS
 /* Black */
 /* Black */
 /* Background */
-/* Primary One (Green) */
-/* 100% Green */
-/* Green */
+/* Primary One (Black) */
+/* 100% Black */
+/* Black */
 /* Primary Two (Brown) */
 /* 100% Brown */
 /* Brown */
@@ -311,7 +311,7 @@ textarea:focus,
   transition: all 0.1s ease-in-out; }
 
 a {
-  color: #001100;
+  color: #00000e;
   text-decoration: underline; }
 
 a:hover,
@@ -550,8 +550,8 @@ input:focus[type="submit"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-  background-color: #e0d3b0;
-  color: #5a5446;
+  background-color: #f8f5eb;
+  color: #00000e;
   text-decoration: none;
   width: 100%;
   margin: 20px 0;
@@ -567,8 +567,8 @@ input:focus[type="submit"],
 .footer-widgets input:focus[type="reset"],
 .footer-widgets input:focus[type="submit"],
 .footer-widgets .button:focus {
-  background-color: #5a5446;
-  color: #e0d3b0;
+  background-color: #c6c4bc;
+  color: #00000e;
   text-decoration: none; }
 
 .button {
@@ -588,14 +588,14 @@ table {
   width: 100%; }
 
 tbody {
-  border-top: 1px solid #e0d3b0; }
+  border-top: 1px solid #00000e; }
 
 td,
 th {
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #e0d3b0;
+  border-bottom: 1px solid #00000e;
   padding: 8px 0; }
 
 th {
@@ -866,7 +866,7 @@ th {
 .gridcontainer.booking_area {
   padding-bottom: 40px;
   margin-bottom: 40px;
-  border-top: 1px solid #e0d3b0; }
+  border-top: 1px solid #00000e; }
 
 /* ### With Sidebar */
 .content-sidebar .coll2 {
@@ -1028,7 +1028,7 @@ th {
 
 .entry-title a:hover,
 .entry-title a:focus {
-  color: #001100; }
+  color: #00000e; }
 
 .widget-title {
   font-size: 18px;
@@ -1038,7 +1038,7 @@ th {
   margin-bottom: 20px; }
 
 .footer-widgets .widget-title {
-  color: #e0d3b0;
+  color: #f8f5eb;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 26px;
@@ -1177,7 +1177,7 @@ img.alignright,
   margin-bottom: 16px; }
 
 .enews-widget input[type="submit"] {
-  background-color: #001100;
+  background-color: #00000e;
   color: #f8f5eb;
   margin: 0;
   width: 100%; }
@@ -1215,7 +1215,7 @@ img.alignright,
 .portBox-overlay {
   height: 100%;
   width: 100%;
-  background: #001100;
+  background: #00000e;
   opacity: 0.45;
   filter: alpha(opacity=45);
   position: fixed;
@@ -1255,15 +1255,15 @@ img.alignright,
   cursor: pointer;
   border-radius: 50%;
   padding: 5px;
-  background-color: #001100 !important;
+  background-color: #00000e !important;
   overflow: visible;
   border: 2px solid #f8f5eb !important;
   text-decoration: none; }
 
 .close-portBox:hover {
-  color: #001100 !important;
+  color: #00000e !important;
   background-color: #f8f5eb !important;
-  border: 2px solid #001100 !important; }
+  border: 2px solid #00000e !important; }
 
 /* Instagram feed CSS
 ---------------------------------------------------------------------------------------------------- */
@@ -1334,7 +1334,7 @@ img.alignright,
   display: block;
   float: left;
   width: 100%;
-  background-color: #e0d3b0;
+  background-color: #dfddd4;
   padding: 20px; }
 
 .gform_wrapper .top_label .gfield_label {
@@ -1417,7 +1417,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 .site-header {
   position: absolute;
   width: 100%;
-  background-color: #001100; }
+  background-color: #00000e; }
 
 .featured-image .site-header {
   background-color: transparent; }
@@ -1854,8 +1854,8 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   padding: 70px 0; }
 
 .dark_background {
-  background-color: #001100;
-  color: #e0d3b0;
+  background-color: #00000e;
+  color: #f8f5eb;
   padding: 70px 0; }
 
 .gridcontainer.dark_background .wrap {
@@ -1869,7 +1869,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 .dark_background h6,
 .dark_background p,
 .dark_background a {
-  color: #e0d3b0; }
+  color: #f8f5eb; }
 
 /* # Event page Layout
 ---------------------------------------------------------------------------------------------------- */
@@ -1907,9 +1907,13 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   padding: 8px 24px;
   text-align: center; }
 
-.event_btn {
+.dark_background a.event_btn {
   float: left;
-  background-color: #000200; }
+  background-color: #f8f5eb;
+  color: #00000e; }
+
+.dark_background a.event_btn:hover {
+  background-color: #c6c4bc; }
 
 .booking_btn {
   float: right; }
@@ -1920,14 +1924,14 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   display: block;
   float: left;
   width: 100%;
-  border-bottom: 1px solid #e0d3b0;
+  border-bottom: 1px solid #00000e;
   margin-bottom: 40px; }
 
 .event .last {
   display: block;
   float: left;
   width: 100%;
-  border-top: 1px solid #e0d3b0; }
+  border-top: 1px solid #00000e; }
 
 /* Menu
 ---------------------------------------------------------------------------------------------------- */
@@ -1937,7 +1941,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 .menu .entry-content .gridcontainer {
   padding-bottom: 40px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #e0d3b0; }
+  border-bottom: 1px solid #00000e; }
 
 .menu .entry-content .gridcontainer:last-child {
   padding-bottom: 0px;
@@ -1948,7 +1952,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   text-align: center; }
 
 .menu .entry-content .gridcontainer.recomended {
-  background-color: #e0d3b0;
+  background-color: #dfddd4;
   padding-bottom: 0px;
   border-bottom: none; }
 
@@ -2072,7 +2076,7 @@ p.entry-meta {
 .archive-pagination li a:hover,
 .archive-pagination li a:focus,
 .archive-pagination .active a {
-  background-color: #001100;
+  background-color: #00000e;
   text-decoration: underline; }
 
 /* ## Comments
@@ -2166,11 +2170,11 @@ li.comment {
   margin-bottom: 20px; }
 
 .sidebar .event-table tbody {
-  border-top: 1px solid #001100; }
+  border-top: 1px solid #00000e; }
 
 .sidebar .event-table td {
   vertical-align: top;
-  border-bottom: 1px solid #001100;
+  border-bottom: 1px solid #00000e;
   padding: 8px 0; }
 
 .sidebar .event-table time {
@@ -2208,8 +2212,8 @@ li.comment {
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets {
-  color: #e0d3b0;
-  background-color: #001100;
+  color: #f8f5eb;
+  background-color: #00000e;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 24px;
@@ -2218,7 +2222,7 @@ li.comment {
   padding: 100px 0; }
 
 .footer-widgets a {
-  color: #e0d3b0;
+  color: #f8f5eb;
   text-decoration: none; }
 
 .footer-widgets input {
@@ -2266,9 +2270,9 @@ li.comment {
 .tripadvisor a {
   background: url(images/trip_01.png) no-repeat center center;
   display: block;
-  background-color: #e0d3b0 !important;
+  background-color: #f8f5eb !important;
   border-radius: 0px;
-  color: #5a5446 !important;
+  color: #00000e !important;
   border: 0px #ffffff solid !important;
   height: 44px;
   width: 44px;
@@ -2276,8 +2280,7 @@ li.comment {
   text-decoration: none; }
 
 .tripadvisor a:hover {
-  background: url(images/trip_02.png) no-repeat center center;
-  background-color: #5a5446 !important; }
+  background-color: #c6c4bc !important; }
 
 /*
 - Site Footer
@@ -2285,8 +2288,8 @@ li.comment {
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #000200;
-  color: #e0d3b0;
+  background-color: #1a1a26;
+  color: #f8f5eb;
   font-size: 10px;
   font-size: 1rem;
   line-height: 14px;
@@ -2764,7 +2767,7 @@ li.comment {
     transition: opacity .4s ease-in-out;
     width: 100%;
     z-index: 99;
-    background-color: #002b00; }
+    background-color: #000028; }
   .genesis-nav-menu.responsive-menu .sub-menu .sub-menu {
     margin: 0; }
   .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
@@ -2789,7 +2792,7 @@ li.comment {
     border-bottom: none; }
   .site-header .responsive-menu-icon.active .icon-bar {
     display: none;
-    background-color: #004400; }
+    background-color: #000041; }
   .site-header .responsive-menu-icon.active .icon-bar:first-child {
     display: block;
     width: 25px;
@@ -2930,7 +2933,7 @@ li.comment {
     max-width: 768px; }
   .featured-image .site-header {
     position: absolute;
-    background-color: #001100; }
+    background-color: #00000e; }
   .archive-description,
   .author-box,
   .comment-respond,

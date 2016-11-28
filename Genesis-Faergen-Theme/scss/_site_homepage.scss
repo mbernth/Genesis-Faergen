@@ -115,7 +115,7 @@
 }
 .dark_background {
   background-color: $color-primary-one;
-  color: $color-primary-two;
+  color: $color-white;
   padding: 70px 0; }
 .gridcontainer.dark_background .wrap {
 	padding:0;
@@ -128,4 +128,5 @@
 .dark_background h6,
 .dark_background p,
 .dark_background a {
-  color: $color-primary-two; }
+  color: $color-white; 
+}
