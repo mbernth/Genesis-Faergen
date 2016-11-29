@@ -80,3 +80,43 @@
 	text-align: center;
 	width:100%;
 }
+
+/* ## Before header
+--------------------------------------------- */
+
+.before-header{
+	position: absolute;
+	width: 100%;
+	margin-top: 20px;
+	background: transparent;
+	z-index: 3000;
+	.wrap {
+		width: 100%;
+		max-width: 90%;
+		.widget_nav_menu{
+				margin-left: 20px;
+			}
+		section{
+			display: inline-block;
+			float: right;
+			text-align: right;
+			color: $color-white;
+			img.alignnone, .alignnone {
+				margin: 0;
+			}
+			p{
+				padding: 0;
+				margin: 0;
+			}
+			a{
+				color: $color-white;
+				text-decoration: none;
+				@include font(1.2, 1.4);
+			}
+			.menu-item-language-current{
+				display: none;
+			}
+		}
+	}
+}
+

@@ -605,13 +605,14 @@ th {
 --------------------------------------------- */
 .tablepress tfoot th,
 .tablepress thead th {
-  background-color: #e0d3b0;
+  background-color: #00000e;
+  color: #f8f5eb;
   font-weight: 700;
   vertical-align: middle; }
 
 .tablepress tbody td,
 .tablepress tfoot th {
-  border-top: 1px solid #e0d3b0; }
+  border-top: 1px solid #00000e; }
 
 .tablepress td.column-2,
 .tablepress th.column-2,
@@ -671,7 +672,7 @@ th {
 
 .site-inner {
   clear: both;
-  padding-top: 273px; }
+  padding-top: 330px; }
 
 .featured-image .site-inner {
   padding-top: 40px; }
@@ -1287,9 +1288,8 @@ img.alignright,
   padding: 16px 24px;
   margin: 5px auto 0 auto;
   background: #79ad36;
-  color: #e0d3b0;
+  color: #f8f5eb;
   border: none;
-  color: #e0d3b0;
   text-decoration: none;
   font-size: 18px;
   font-size: 1.8rem;
@@ -1304,7 +1304,7 @@ img.alignright,
 
 #sb_instagram .sbi_follow_btn a {
   background: #79ad36;
-  color: #e0d3b0; }
+  color: #f8f5eb; }
 
 /* Sounds
 ---------------------------------------------------------------------------------------------------- */
@@ -1486,6 +1486,39 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 .site-header .widget-area {
   text-align: center;
   width: 100%; }
+
+/* ## Before header
+--------------------------------------------- */
+.before-header {
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+  background: transparent;
+  z-index: 3000; }
+  .before-header .wrap {
+    width: 100%;
+    max-width: 90%; }
+    .before-header .wrap .widget_nav_menu {
+      margin-left: 20px; }
+    .before-header .wrap section {
+      display: inline-block;
+      float: right;
+      text-align: right;
+      color: #f8f5eb; }
+      .before-header .wrap section img.alignnone, .before-header .wrap section .alignnone {
+        margin: 0; }
+      .before-header .wrap section p {
+        padding: 0;
+        margin: 0; }
+      .before-header .wrap section a {
+        color: #f8f5eb;
+        text-decoration: none;
+        font-size: 12px;
+        font-size: 1.2rem;
+        line-height: 14px;
+        line-height: 1.4rem; }
+      .before-header .wrap section .menu-item-language-current {
+        display: none; }
 
 /*
 - Site Navigation
@@ -1709,7 +1742,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   width: 25px;
   height: 3px;
   margin: 3px 0;
-  background-color: #e0d3b0;
+  background-color: #f8f5eb;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
@@ -2694,6 +2727,8 @@ li.comment {
   .site-header ul.genesis-nav-menu,
   .site-header .search-form {
     float: none; }
+  .site-header ul.genesis-nav-menu {
+    background-color: rgba(0, 0, 14, 0.85); }
   .genesis-nav-menu,
   .site-description,
   .site-header .title-area,
@@ -2723,11 +2758,12 @@ li.comment {
   .responsive-menu-icon {
     display: block; }
   .genesis-nav-menu.responsive-menu li {
-    border-top: 1px solid #e0d3b0; }
+    border-top: 1px solid #f8f5eb; }
   .genesis-nav-menu.responsive-menu ul li {
     border-top: none; }
   .site-header .responsive-menu-icon {
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-right: 5%; }
   .genesis-nav-menu.responsive-menu .menu-item {
     margin: 0; }
   .genesis-nav-menu.responsive-menu .menu-item:hover {
@@ -2767,7 +2803,7 @@ li.comment {
     transition: opacity .4s ease-in-out;
     width: 100%;
     z-index: 99;
-    background-color: #000028; }
+    background-color: #0d0d1a; }
   .genesis-nav-menu.responsive-menu .sub-menu .sub-menu {
     margin: 0; }
   .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
@@ -2792,7 +2828,7 @@ li.comment {
     border-bottom: none; }
   .site-header .responsive-menu-icon.active .icon-bar {
     display: none;
-    background-color: #000041; }
+    background-color: #f8f5eb; }
   .site-header .responsive-menu-icon.active .icon-bar:first-child {
     display: block;
     width: 25px;
@@ -2916,7 +2952,17 @@ li.comment {
     margin-bottom: 40px;
     border-bottom: 1px solid #e0d3b0; }
   .menu .entry-content .gridcontainer.recomended .coll1 {
-    padding: 20px; } }
+    padding: 20px; }
+  /* ## header
+	--------------------------------------------- */
+  .site-header .wrap {
+    max-width: 100%; }
+  /* ## Before header
+	--------------------------------------------- */
+  .before-header {
+    margin-top: 10px; }
+    .before-header .wrap {
+      padding-right: 10px; } }
 
 /*
 	- Max-width: 880px

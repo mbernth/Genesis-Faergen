@@ -363,13 +363,14 @@ th {
 
 .tablepress tfoot th, 
 .tablepress thead th {
-    background-color: $color-primary-two;
+    background-color: $color-primary-one;
+	color: $color-white;
     font-weight: 700;
     vertical-align: middle;
 }
 .tablepress tbody td, 
 .tablepress tfoot th {
-    border-top: 1px solid $color-primary-two;
+    border-top: 1px solid $color-primary-one;
 }
 .tablepress td.column-2, 
 .tablepress th.column-2,
