@@ -1,0 +1,174 @@
+/* # Gallery
+---------------------------------------------------------------------------------------------------- */
+@mixin rowMachine($numPerRow, $margin) {
+  width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
+  &:nth-child(n) {
+    margin-bottom: $margin;
+    margin-right: $margin;
+  }
+  &:nth-of-type(#{$numPerRow}n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+// VITAL CSS
+.galley-section.page .site-inner{
+	margin-bottom: 0;
+}
+.gridder{
+    margin: 10px 0 0 0;
+    padding: 0px;
+    list-style-type: none;
+    font-size:0;
+}
+
+.gridder-list, .gridder-show{
+    font-size:16px;
+}
+
+.gridder-list{ 
+    display: inline-block;
+    vertical-align: top;
+}
+.gridder-show{ 
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.gridder-content{
+    display: none;
+}
+
+.gridder-list{
+    @include rowMachine(3,3.33333333%);
+}
+
+.gridder-list .image {
+    background-color: $color-primary-two;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.gridder-list {
+  position: relative;
+	cursor: pointer;
+  overflow: hidden; }
+/*
+.gridder-list .image {
+  -webkit-transition: 0.75s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 0.75s transform cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s; }
+
+.gridder-list:hover .image {
+  -webkit-transform: scale(1.05) translateZ(0);
+  transform: scale(1.05) translateZ(0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s; }
+*/
+/* ## Gallery show
+------------------------------------------ */
+
+.gallery_overlay{
+	position: absolute;
+	display: block;
+	bottom: 0;
+	padding: 10px;
+	background-color: $color-black;
+}
+.gallery_overlay h2{
+	color: $color-white;
+	margin-bottom: 0;
+}
+
+.gridder-show {
+    float: left;
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+	background-color: $color-primary-two;
+}
+.gridder-show img{
+	max-width: 45%;
+	float: left;
+	margin-right: 20px;
+	display: block
+}
+
+.gridder-navigation {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0px;
+    text-align: center;
+}
+
+.gridder-navigation a {
+    background: #FFF;
+    display: inline-block;
+    padding: 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 0px;
+    transition: all .3s ease-in-out;
+	margin-left: 10px;
+}
+a.gridder-nav{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition:    all 0.5s ease-in-out;
+	-ms-transition:     all 0.5s ease-in-out;
+	-o-transition:      all 0.5s ease-in-out;
+	transition:         all 0.5s ease-in-out;
+}
+a.gridder-nav:hover{
+	background-color: $color-primary-two;
+	color: $color-black;
+}
+.gridder-navigation a.disabled {
+    background-color: $color-primary-two;
+	display: none;
+}
+.gridder-close {
+	float: right;
+	background-color: $color-primary-two;
+	margin-left: 10px;
+}
+a.gridder-close{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition:    all 0.5s ease-in-out;
+	-ms-transition:     all 0.5s ease-in-out;
+	-o-transition:      all 0.5s ease-in-out;
+	transition:         all 0.5s ease-in-out;
+}
+a.gridder-close:hover{
+	background-color: $color-primary-two;
+	color: $color-white;
+}
+
+.gridder-expanded-content {
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+	text-align: center;
+}
+
+.gallery_description{
+	position: relative;
+	width: 52%;
+	margin-top: 40px;
+	text-align: left;
+	float: right;
+}
+.gallery_description p{
+	margin-bottom: 0;
+	@include font(1.6, 1.6);
+}
