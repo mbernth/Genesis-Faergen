@@ -42,11 +42,11 @@
 }
 
 .gridder-list{
-    @include rowMachine(3,3.33333333%);
+    @include rowMachine(3,1.666666666667%);
 }
 
 .gridder-list .image {
-    background-color: $color-primary-two;
+    background-color: tint($color-black, 50%);
     background-size: cover;
     background-position: center;
     height: 350px;
@@ -55,7 +55,7 @@
 .gridder-list {
   position: relative;
 	cursor: pointer;
-  overflow: hidden; }
+  /* overflow: hidden; */ }
 /*
 .gridder-list .image {
   -webkit-transition: 0.75s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
@@ -76,6 +76,20 @@
 /* ## Gallery show
 ------------------------------------------ */
 
+.gridder li.selectedItem:after {
+    top: auto;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: tint($color-black, 75%);
+    border-width: 15px;
+    left: 50%;
+    margin: -10px 0 0 -15px;
+}
+
 .gallery_overlay{
 	position: absolute;
 	display: block;
@@ -93,7 +107,7 @@
     display: block;
     padding: 20px;
     margin-bottom: 20px;
-	background-color: $color-primary-two;
+	background-color: tint($color-black, 75%);
 }
 .gridder-show img{
 	max-width: 45%;

@@ -2588,16 +2588,16 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   display: none; }
 
 .gridder-list {
-  width: 31.1111111133%; }
+  width: 32.2222222222%; }
   .gridder-list:nth-child(n) {
-    margin-bottom: 3.33333333%;
-    margin-right: 3.33333333%; }
+    margin-bottom: 1.6666666667%;
+    margin-right: 1.6666666667%; }
   .gridder-list:nth-of-type(3n) {
     margin-right: 0;
     margin-bottom: 0; }
 
 .gridder-list .image {
-  background-color: #e0d3b0;
+  background-color: #808087;
   background-size: cover;
   background-position: center;
   height: 350px; }
@@ -2605,7 +2605,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 .gridder-list {
   position: relative;
   cursor: pointer;
-  overflow: hidden; }
+  /* overflow: hidden; */ }
 
 /*
 .gridder-list .image {
@@ -2626,6 +2626,19 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 */
 /* ## Gallery show
 ------------------------------------------ */
+.gridder li.selectedItem:after {
+  top: auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #bfbfc3;
+  border-width: 15px;
+  left: 50%;
+  margin: -10px 0 0 -15px; }
+
 .gallery_overlay {
   position: absolute;
   display: block;
@@ -2642,7 +2655,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   display: block;
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #e0d3b0; }
+  background-color: #bfbfc3; }
 
 .gridder-show img {
   max-width: 45%;
