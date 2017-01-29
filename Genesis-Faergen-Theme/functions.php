@@ -2,6 +2,9 @@
 //* Start the engine
 include_once( get_template_directory() . '/lib/init.php' );
 
+//* Include Icons
+include_once( get_stylesheet_directory() . '/lib/svg_icons.php' );
+
 //* Set Localization (do not remove)
 load_child_theme_textdomain( 'faergecafe', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'faergecafe' ) );
 
@@ -76,6 +79,17 @@ function mono_favicon_filter( $favicon ) {
 	echo '<meta name="msapplication-wide310x150logo" content="'.get_bloginfo( 'stylesheet_directory' ).'/images//widetile.png" />';
 	echo '<meta name="msapplication-square310x310logo" content="'.get_bloginfo( 'stylesheet_directory' ).'/images//largetile.png" />';
 
+}
+
+
+//* Various supports and custom edits
+// =====================================================================================================================
+
+//* Add svg upload
+add_filter('upload_mimes', 'cc_mime_types');
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
 }
 
 

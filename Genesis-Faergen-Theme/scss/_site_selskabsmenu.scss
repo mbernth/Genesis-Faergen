@@ -1,4 +1,4 @@
-/* # Gallery
+/* # Selskabsmenu
 ---------------------------------------------------------------------------------------------------- */
 @mixin rowMachine($numPerRow, $margin) {
   width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
@@ -17,7 +17,7 @@
 	margin-bottom: 0;
 }
 .gridder{
-    margin: 10px 0 0 0;
+    margin: 0 0 40px 0;
     padding: 0px;
     list-style-type: none;
     font-size:0;
@@ -93,9 +93,10 @@
 .gallery_overlay{
 	position: absolute;
 	display: block;
-	bottom: 0;
+	top: 0;
 	padding: 10px;
 	background-color: $color-black;
+	width: 100%;
 }
 .gallery_overlay h2{
 	color: $color-white;
@@ -119,14 +120,14 @@
 .gridder-navigation {
     z-index: 1;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    left: 20px;
     padding: 0px;
     text-align: center;
 }
 
 .gridder-navigation a {
-    background: #FFF;
+    background: $color-white;
     display: inline-block;
     padding: 15px;
     color: #000;
@@ -144,16 +145,16 @@ a.gridder-nav{
 	transition:         all 0.5s ease-in-out;
 }
 a.gridder-nav:hover{
-	background-color: $color-primary-two;
-	color: $color-black;
+	background-color: $color-black;
+	color: $color-white;
 }
 .gridder-navigation a.disabled {
-    background-color: $color-primary-two;
+    background-color: $color-black;
 	display: none;
 }
 .gridder-close {
 	float: right;
-	background-color: $color-primary-two;
+	background-color: $color-white;
 	margin-left: 10px;
 }
 a.gridder-close{
@@ -164,7 +165,7 @@ a.gridder-close{
 	transition:         all 0.5s ease-in-out;
 }
 a.gridder-close:hover{
-	background-color: $color-primary-two;
+	background-color: $color-black;
 	color: $color-white;
 }
 
@@ -178,7 +179,7 @@ a.gridder-close:hover{
 .gallery_description{
 	position: relative;
 	width: 52%;
-	margin-top: 40px;
+	margin-top: 0px;
 	text-align: left;
 	float: right;
 }

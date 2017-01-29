@@ -113,4 +113,21 @@
 		margin-bottom:0px;
 		border-bottom: none;
 	}
+	
+	/* # Selskabsmenu
+	---------------------------------------------------------------------------------------------------- */
+	.gridder-list{
+		float: left;
+    	width: 100% !important;
+		margin-left: 0px !important;
+		margin-bottom: 20px !important;
+	}
+	.gridder-show img{
+		max-width: 100%;
+		margin: 0 0 20px 0;
+	}
+	.gallery_description{
+		float: left;
+		width: 100%;
+	}
 }

@@ -111,4 +111,13 @@
   		padding: 10px 25px;
   		@include font(1.8, 2.2);
  	}
+	
+	/* # Selskabsmenu
+	---------------------------------------------------------------------------------------------------- */
+	.gridder-list{
+    	@include rowMachine(3,2.5%);
+	}
+	.gallery_overlay h2{
+		@include font(2.4, 2.4);
+	}
 }
