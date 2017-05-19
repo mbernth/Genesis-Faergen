@@ -46,6 +46,7 @@
   width: 90%;
   max-width: 1200px;
   padding:30px 0 70px;
+	padding: 0;
  }
 
 /* ## Home events
@@ -53,7 +54,8 @@
 /* ### event */
 .event-table {
   float: left;
-  @include structure(800, 1200); 
+  @include structure(800, 1200);
+  padding:30px 0 70px;
 }
 
 .event-table time {
@@ -93,7 +95,8 @@
 /* ### featured event */
 .event-featured {
   float: right;
-  @include structure(360, 1200); 
+  @include structure(360, 1200);
+  padding:30px 0 70px;
  }
 
 .event-featured p {

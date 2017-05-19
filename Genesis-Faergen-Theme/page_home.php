@@ -49,10 +49,12 @@ function top_image() {
 		echo '<div class="gradient"><div class="wrap">';
 		echo '<h1>' . $headline . '</h1>';
 		echo '' . $text . '';
-		if ( ! wp_is_mobile() ) {
+		if($button_text){
+			if ( ! wp_is_mobile() ) {
 			echo '<a href="#" data-display="box-top" class="button">' . $button_text . '</a>';
-		}else{
+			}else{
 			echo '<a href="' . $button_url . '" class="button" target="_blank">' . $button_text . '</a>';
+			}
 		}
 		echo '</div></div></div>';
 		if ( ! wp_is_mobile() ) {
@@ -69,12 +71,15 @@ function top_image() {
 // Events and featured event
 add_action( 'genesis_entry_content', 'cafe_events', 1 );
 function cafe_events() {
+	$f_hide = get_field( 'hide', 'option' );  //featured headline
 	$f_headline = get_field( 'headline', 'option' );  //featured headline
 	$f_image = get_field( 'udvalgt_event_billede', 'option' );  //featured image
 	$f_text = get_field( 'udvalgt_event_text', 'option' );  //featured text
 	$f_url = get_field( 'udvalgt_event_link', 'option' );  //Featured url
 	$hide = get_field( 'skjul_event', 'option' );  //featured headline
 	
+	if( $f_hide ){
+	}else{
 	echo '<div class="event-table">';
 	if ( $f_headline ) {
 		echo '<h2>' . $f_headline . '</h2>';
@@ -126,6 +131,7 @@ function cafe_events() {
 		echo '<p>' . $f_text . '</p>';
 	}
 	echo '</div>';
+	}
 }
 
 // check if the flexible content field has rows of data

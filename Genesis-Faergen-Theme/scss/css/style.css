@@ -3142,14 +3142,16 @@ a.gridder-close:hover {
   margin: 0 auto;
   width: 90%;
   max-width: 1200px;
-  padding: 30px 0 70px; }
+  padding: 30px 0 70px;
+  padding: 0; }
 
 /* ## Home events
 --------------------------------------------- */
 /* ### event */
 .event-table {
   float: left;
-  width: 66.6666666667%; }
+  width: 66.6666666667%;
+  padding: 30px 0 70px; }
 
 .event-table time {
   font-weight: 800; }
@@ -3192,7 +3194,8 @@ a.gridder-close:hover {
 /* ### featured event */
 .event-featured {
   float: right;
-  width: 30%; }
+  width: 30%;
+  padding: 30px 0 70px; }
 
 .event-featured p {
   margin-top: 5px;

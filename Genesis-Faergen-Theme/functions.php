@@ -439,6 +439,7 @@ function booking_top_button() {
 				if( get_row_layout() == 'booking_button' ):
 			
 					if (get_sub_field('top_booking_button')){
+					
 						
 					echo '<div class="gridcontainer booking_area_top">';
 						echo '<div class="coll1">';
@@ -464,6 +465,8 @@ function booking_top_button() {
 							}
 						echo '</div>';
 					echo '</div>';
+						
+					
 					
 					}else{
 						
